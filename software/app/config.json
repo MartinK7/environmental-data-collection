@@ -1,0 +1,196 @@
+{
+	"wunderground": {
+		"station_id": "IBRNO512",
+		"key_password": "mysecretcode1234",
+		"bindings": [
+			{
+				"source": "wsen2511020213301_temperature",
+				"destination": "temp_f",
+				"formula": "{} * 9.0 / 5.0 + 32.0"
+			}
+		]
+	},
+	"flask": {
+		"host": "0.0.0.0",
+		"port": 3002
+	},
+	"sqlite": {
+		"database": "edc.db",
+		"query_limit": 5000,
+		"allowed_tables": [
+			{
+				"table_name": "wsen2511020213301_temperature",
+				"title": "Temperature (WSEN 2511020213301)",
+				"yaxis_title": "Temperature [°C]",
+				"unit": "°C",
+				"maximum": 60,
+				"minimum": -60
+			},
+			{
+				"table_name": "sht40_temperature",
+				"title": "Temperature (SHT40)",
+				"yaxis_title": "Temperature [°C]",
+				"unit": "°C",
+				"maximum": 60,
+				"minimum": -60
+			},
+			{
+				"table_name": "wsen2511020213301_pressure",
+				"title": "Pressure (WSEN 2511020213301)",
+				"yaxis_title": "Pressure [hPa]",
+				"unit": "hPa",
+				"maximum": 1100,
+				"minimum": 900
+			},
+			{
+				"table_name": "sht40_humidity",
+				"title": "Humidity (SHT40)",
+				"yaxis_title": "Humidity [%]",
+				"unit": "%",
+				"maximum": 100,
+				"minimum": 0
+			},
+			{
+				"table_name": "bh1750fvi_lux",
+				"title": "Lux Meter (BH1750FVI)",
+				"yaxis_title": "Lux [lx]",
+				"unit": "lx",
+				"maximum": 150000,
+				"minimum": 0
+			},
+			{
+				"table_name": "si1145_uv_index",
+				"title": "UV Index (Si1145)",
+				"yaxis_title": "UV Index [-]",
+				"unit": "-",
+				"maximum": 30,
+				"minimum": 0
+			},
+			{
+				"table_name": "si1145_visible",
+				"title": "Visible light (Si1145)",
+				"yaxis_title": "Visible light (Dimensionless Raw Data) [-]",
+				"unit": "-"
+			},
+			{
+				"table_name": "si1145_ir",
+				"title": "Infra Red light (Si1145)",
+				"yaxis_title": "IR (Dimensionless Raw Data) [-]",
+				"unit": "-"
+			},
+			{
+				"table_name": "std_pm1_0_ug_m3",
+				"title": "Particles PM1.0 (standard particle) (PMS7003)",
+				"yaxis_title": "Concentration [μg/m^3]",
+				"unit": "μg/m^3",
+				"minimum": 0
+			},
+			{
+				"table_name": "std_pm2_5_ug_m3",
+				"title": "Particles PM2.0 (standard particle) (PMS7003)",
+				"yaxis_title": "Concentration [μg/m^3]",
+				"unit": "μg/m^3",
+				"minimum": 0
+			},
+			{
+				"table_name": "std_pm10_ug_m3",
+				"title": "Particles PM10 (standard particle) (PMS7003)",
+				"yaxis_title": "Concentration [μg/m^3]",
+				"unit": "μg/m^3",
+				"minimum": 0
+			},
+			{
+				"table_name": "atm_pm1_ug_m3",
+				"title": "Particles PM1.0 (under atmospheric environment) (PMS7003)",
+				"yaxis_title": "Concentration [μg/m^3]",
+				"unit": "μg/m^3",
+				"minimum": 0
+			},
+			{
+				"table_name": "atm_pm2_5_ug_m3",
+				"title": "Particles PM2.5 (under atmospheric environment) (PMS7003)",
+				"yaxis_title": "Concentration [μg/m^3]",
+				"unit": "μg/m^3",
+				"minimum": 0
+			},
+			{
+				"table_name": "atm_pm10_ug_m3",
+				"title": "Particles PM10 (under atmospheric environment) (PMS7003)",
+				"yaxis_title": "Concentration [μg/m^3]",
+				"unit": "μg/m^3",
+				"minimum": 0
+			},
+			{
+				"table_name": "count_0_3_um_in_100cm3",
+				"title": "Particles >0.3μm in 100cm3 of air (PMS7003)",
+				"yaxis_title": "Count [-]",
+				"unit": "-",
+				"minimum": 0
+			},
+			{
+				"table_name": "count_0_5_um_in_100cm3",
+				"title": "Particles >0.5μm in 100cm3 of air (PMS7003)",
+				"yaxis_title": "Count [-]",
+				"unit": "-",
+				"minimum": 0
+			},
+			{
+				"table_name": "count_1_0_um_in_100cm3",
+				"title": "Particles >1.0μm in 100cm3 of air (PMS7003)",
+				"yaxis_title": "Count [-]",
+				"unit": "-",
+				"minimum": 0
+			},
+			{
+				"table_name": "count_2_5_um_in_100cm3",
+				"title": "Particles >2.5μm in 100cm3 of air (PMS7003)",
+				"yaxis_title": "Count [-]",
+				"unit": "-",
+				"minimum": 0
+			},
+			{
+				"table_name": "count_5_0_um_in_100cm3",
+				"title": "Particles >5.0μm in 100cm3 of air (PMS7003)",
+				"yaxis_title": "Count [-]",
+				"unit": "-",
+				"minimum": 0
+			},
+			{
+				"table_name": "count_10_0_um_in_100cm3",
+				"title": "Particles >10.0μm in 100cm3 of air (PMS7003)",
+				"yaxis_title": "Count [-]",
+				"unit": "-",
+				"minimum": 0
+			},
+			{
+				"table_name": "mcp3424t_mq131_O3",
+				"title": "Ozone (MQ131-LOW via MCP3424T) (More resistivity more ozone)",
+				"yaxis_title": "Ozone [Ohms]",
+				"unit": "Ohm",
+				"minimum": 0
+			},
+			{
+				"table_name": "mcp3424t_5V_calibration",
+				"title": "5V reference (MCP3424T)",
+				"yaxis_title": "5V reference [Volts]",
+				"unit": "Volts",
+				"maximum": 5.5,
+				"minimum": 4.5
+			},
+			{
+				"table_name": "mcp3424t_mics4514_CO",
+				"title": "Carbon Oxide (MICS4514 via MCP3424T) (More conductivity more CO)",
+				"yaxis_title": "Carbon Oxide [μSiemens]",
+				"unit": "μSiemens",
+				"minimum": 0
+			},
+			{
+				"table_name": "mcp3424t_mics4514_NOx",
+				"title": "NOx (MICS4514 via MCP3424T) (More resistivity more NOx)",
+				"yaxis_title": "NOx [Ohms]",
+				"unit": "Ohm",
+				"minimum": 0
+			}
+		]
+	}
+}

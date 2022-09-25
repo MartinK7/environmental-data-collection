@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Environmental Data Collection</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        #header {
+            background-color: #2b2d42;
+            color: #fff;
+            padding: 10px;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        #main {
+            padding: 20px;
+        }
+
+        #figures {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: stretch;
+        }
+
+        #figures > div {
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: stretch;
+        }
+    </style>
+    <script>
+        {{ plotly | safe }}
+    </script>
+</head>
+<body>
+    <header id="header">
+        <h1>Environmental Data Collection</h1>
+    </header>
+    <div id="cameraimage">
+        <a href="cameraimage.jpg">
+            <img src="cameraimage.jpg" alt="Camera Image" style="display:block; margin:auto; height:30vh;">
+        </a>
+    </div>
+    <div id="figures"></div>
+    <script>
+        fetch('/tables')
+            .then(response => response.json())
+            .then(tables_json => {
+                for (let i = 0; i < tables_json.length; i++) {
+                    var div = document.createElement('div');
+                    div.id = 'figure-' + i;
+                    div.className = 'chart';
+                    document.getElementById('figures').appendChild(div);
+                }
+
+                for (let i = 0; i < tables_json.length; i++) {
+                    const element = tables_json[i]
+                    fetch('/data?table_name=' + element.table_name + '&start_time=0&end_time=9999999999')
+                        .then(response => response.json())
+                        .then(data_json => {
+                            // Extract the x and y values from the data
+                            const x_tmp = data_json.map(d => d[0]);
+                            const y_tmp = data_json.map(d => d[1]);
+
+                            // Convert time data from string to timestamp
+                            const x_tmp_mapped = x_tmp.map((x_tmp) => Date.parse(x_tmp));
+
+                            if (!element.hasOwnProperty("maximum")) {
+                                element.maximum = Infinity;
+                            }
+
+                            if (!element.hasOwnProperty("minimum")) {
+                                element.minimum = -Infinity;
+                            }
+
+                            // Filter the data to only include neighboring points within `maxTimeGap`
+                            const max_time_gap_milliseconds = 5 * 60 * 1000;
+                            var x = [];
+                            var y = [];
+                            for (let i = 0; i < x_tmp.length - 1; i++) {
+                                if (y_tmp[i] > element.maximum) {
+                                    y.push(null);
+                                    console.log(element)
+                                    console.log(y_tmp[i])
+                                } else  if (y_tmp[i] < element.minimum) {
+                                    y.push(null);
+                                } else if (x_tmp_mapped[i + 1] - x_tmp_mapped[i] > max_time_gap_milliseconds) {
+                                    y.push(null);
+                                } else {
+                                    y.push(y_tmp[i]);
+                                }
+                                x.push(x_tmp[i]);
+                            }
+
+                            // Create the trace for the scatter plot
+                            const trace = {
+                                x: x,
+                                y: y,
+                                mode: 'lines',
+                                connectgaps: false,
+                                marker: {
+                                    size: 10,
+                                    color: y
+                                }
+                            };
+
+                            // Create the layout for the plot
+                            const layout = {
+                                title: element.title,
+                                xaxis: {
+                                    title: 'Time'
+                                },
+                                yaxis: {
+                                    title: element.yaxis_title
+                                }
+                            };
+
+                            // Create the data array for the plot
+                            const plotData = [trace];
+
+                            // Plot the data using Plotly.js
+                            Plotly.newPlot('figure-' + i, plotData, layout);
+
+                            // Get a reference to the plot's container element
+                            var plotContainer = document.getElementById('figure-' + i);
+
+                            // Listen for changes to the container's width
+                            new ResizeObserver(function () {
+                                // Get the new width of the container
+                                var newWidth = plotContainer.clientWidth;
+
+                                // Update the plot's layout with the new width
+                                Plotly.relayout('figure-' + i, {width: newWidth});
+                            }).observe(plotContainer);
+
+
+                        })
+                        .catch(error => {
+                            console.error(error);
+                        })
+                }
+            })
+            .catch(error => {
+                console.error(error);
+            });
+    </script>
+</body>
+</html>
+

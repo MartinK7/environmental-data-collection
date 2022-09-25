@@ -1,0 +1,30 @@
+[submodule "fw/edc_main_fw/libraries/freertos/FreeRTOS-Kernel"]
+	path = firmware/libraries/freertos/FreeRTOS-Kernel
+	url = https://github.com/FreeRTOS/FreeRTOS-Kernel.git
+[submodule "fw/edc_main_fw/libraries/freertos/FreeRTOS_helpers"]
+	path = firmware/libraries/freertos/FreeRTOS_helpers
+	url = https://github.com/DRNadler/FreeRTOS_helpers.git
+[submodule "fw/edc_main_fw/libraries/lwip/lwip"]
+	path = firmware/libraries/lwip/lwip
+	url = https://git.savannah.nongnu.org/git/lwip.git
+[submodule "fw/edc_main_fw/tiny-AES-c"]
+	path = firmware/libraries/tiny-AES-c
+	url = https://github.com/kokke/tiny-AES-c
+[submodule "fw/edc_main_fw/libraries/Si1145/Si1145-universal-driver"]
+	path = firmware/libraries/Si1145/Si1145-universal-driver
+	url = https://github.com/MartinK7/Si1145-universal-driver
+[submodule "bh1750fvi"]
+	path = firmware/libraries/bh1750fvi/bh1750fvi
+	url = https://github.com/hepingood/bh1750fvi
+[submodule "fw/edc_main_fw/libraries/wsen_pressure_sensor/Sensors-SDK_STM32"]
+	path = firmware/libraries/wsen_pressure_sensor/Sensors-SDK_STM32
+	url = https://github.com/WurthElektronik/Sensors-SDK_STM32
+[submodule "fw/edc_main_fw/libraries/mcp3424/mcp3424-universal-driver"]
+	path = firmware/libraries/mcp3424/mcp3424-universal-driver
+	url = https://github.com/MartinK7/mcp3424-universal-driver
+[submodule "STM32-OV2640-NOHAL"]
+	path = firmware/libraries/ov2640/ov2640/STM32-OV2640-NOHAL
+	url = https://github.com/MartinK7/STM32-OV2640-NOHAL
+[submodule "fw/edc_main_fw/libraries/Si1145/Adafruit_SI1145_Library"]
+	path = firmware/libraries/Si1145/Adafruit_SI1145_Library
+	url = https://github.com/adafruit/Adafruit_SI1145_Library.git

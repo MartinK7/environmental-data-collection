@@ -1,0 +1,12 @@
+.*
+*.db*
+*.lnk
+.*#*
+!.gitignore
+*_.*
+~*.*
+!.cproject
+!.project
+edcmain~renumsch.scr
+**/camera/*.jpg
+*.blend1

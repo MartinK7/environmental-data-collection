@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?fileVersion 4.0.0?><cproject storage_type_id="org.eclipse.cdt.core.XmlProjectDescriptionStorage">
+	<storageModule moduleId="org.eclipse.cdt.core.settings">
+		<cconfiguration id="com.st.stm32cube.ide.mcu.gnu.managedbuild.config.exe.debug.1183035506.1755427946">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="com.st.stm32cube.ide.mcu.gnu.managedbuild.config.exe.debug.1183035506.1755427946" moduleId="org.eclipse.cdt.core.settings" name="build">
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration artifactExtension="elf" artifactName="${ProjName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe,org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.debug" cleanCommand="rm -rf" description="" errorParsers="org.eclipse.cdt.core.GASErrorParser;org.eclipse.cdt.core.GmakeErrorParser;org.eclipse.cdt.core.GLDErrorParser;org.eclipse.cdt.core.CWDLocator;org.eclipse.cdt.core.GCCErrorParser" id="com.st.stm32cube.ide.mcu.gnu.managedbuild.config.exe.debug.1183035506.1755427946" name="build" parent="com.st.stm32cube.ide.mcu.gnu.managedbuild.config.exe.debug">
+					<folderInfo id="com.st.stm32cube.ide.mcu.gnu.managedbuild.config.exe.debug.1183035506.1755427946." name="/" resourcePath="">
+						<toolChain id="com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.exe.debug.1832445193" name="MCU ARM GCC" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.toolchain.exe.debug">
+							<option id="com.st.stm32cube.ide.mcu.gnu.managedbuild.option.target_mcu.708543627" name="MCU" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.option.target_mcu" useByScannerDiscovery="true" value="STM32H723ZGTx" valueType="string"/>
+							<option id="com.st.stm32cube.ide.mcu.gnu.managedbuild.option.target_cpuid.1508476775" name="CPU" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.option.target_cpuid" useByScannerDiscovery="false" value="0" valueType="string"/>
+							<option id="com.st.stm32cube.ide.mcu.gnu.managedbuild.option.target_coreid.2046976592" name="Core" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.option.target_coreid" useByScannerDiscovery="false" value="0" valueType="string"/>
+							<option id="com.st.stm32cube.ide.mcu.gnu.managedbuild.option.fpu.1522845425" name="Floating-point unit" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.option.fpu" useByScannerDiscovery="true" value="com.st.stm32cube.ide.mcu.gnu.managedbuild.option.fpu.value.fpv5-d16" valueType="enumerated"/>
+							<option id="com.st.stm32cube.ide.mcu.gnu.managedbuild.option.floatabi.346466038" name="Floating-point ABI" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.option.floatabi" useByScannerDiscovery="true" value="com.st.stm32cube.ide.mcu.gnu.managedbuild.option.floatabi.value.hard" valueType="enumerated"/>
+							<option id="com.st.stm32cube.ide.mcu.gnu.managedbuild.option.target_board.160624235" name="Board" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.option.target_board" useByScannerDiscovery="false" value="genericBoard" valueType="string"/>
+							<option id="com.st.stm32cube.ide.mcu.gnu.managedbuild.option.defaults.1882741458" name="Defaults" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.option.defaults" useByScannerDiscovery="false" value="com.st.stm32cube.ide.common.services.build.inputs.revA.1.0.5 || Debug || true || Executable || com.st.stm32cube.ide.mcu.gnu.managedbuild.option.toolchain.value.workspace || STM32H723ZGTx || 0 || 0 || arm-none-eabi- || ${gnu_tools_for_stm32_compiler_path} || ../Inc ||  ||  || STM32 | STM32H7SINGLE | STM32H723ZGTx | STM32H7 ||  || Src | Startup | Inc ||  ||  || ${workspace_loc:/${ProjName}/STM32H723ZGTX_FLASH.ld} || true || NonSecure ||  ||  ||  || None || " valueType="string"/>
+							<option id="com.st.stm32cube.ide.mcu.gnu.managedbuild.option.runtimelibrary_c.1273587654" name="Runtime library" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.option.runtimelibrary_c" useByScannerDiscovery="true" value="com.st.stm32cube.ide.mcu.gnu.managedbuild.option.runtimelibrary_c.value.standard_c" valueType="enumerated"/>
+							<option id="com.st.stm32cube.ide.mcu.gnu.managedbuild.option.nanoprintffloat.2049113457" name="Use float with printf from newlib-nano (-u _printf_float)" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.option.nanoprintffloat" useByScannerDiscovery="false" value="true" valueType="boolean"/>
+							<option id="com.st.stm32cube.ide.mcu.gnu.managedbuild.option.nanoscanffloat.82870789" name="Use float with scanf from newlib-nano (-u _scanf_float)" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.option.nanoscanffloat" useByScannerDiscovery="false" value="true" valueType="boolean"/>
+							<option id="com.st.stm32cube.ide.mcu.gnu.managedbuild.option.convertbinary.1423278306" name="Convert to binary file (-O binary)" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.option.convertbinary" useByScannerDiscovery="false" value="true" valueType="boolean"/>
+							<option id="com.st.stm32cube.ide.mcu.gnu.managedbuild.option.converthex.1646434369" name="Convert to Intel Hex file (-O ihex)" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.option.converthex" useByScannerDiscovery="false" value="true" valueType="boolean"/>
+							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="com.st.stm32cube.ide.mcu.gnu.managedbuild.targetplatform.1598083971" isAbstract="false" osList="all" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.targetplatform"/>
+							<builder buildPath="${workspace_loc:/edc_main_fw}/Debug" id="com.st.stm32cube.ide.mcu.gnu.managedbuild.builder.1490985946" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="Gnu Make Builder" parallelBuildOn="true" parallelizationNumber="optimal" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.builder"/>
+							<tool id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.assembler.980967908" name="MCU GCC Assembler" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.assembler">
+								<option id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.assembler.option.debuglevel.1964258346" name="Debug level" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.assembler.option.debuglevel" useByScannerDiscovery="false" value="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.assembler.option.debuglevel.value.g3" valueType="enumerated"/>
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.assembler.option.definedsymbols.1317635233" name="Define symbols (-D)" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.assembler.option.definedsymbols" useByScannerDiscovery="false" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="DEBUG"/>
+								</option>
+								<inputType id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.assembler.input.1830508567" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.assembler.input"/>
+							</tool>
+							<tool id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.90712722" name="MCU GCC Compiler" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler">
+								<option id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.option.debuglevel.1602704315" name="Debug level" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.option.debuglevel" useByScannerDiscovery="false" value="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.option.debuglevel.value.g3" valueType="enumerated"/>
+								<option id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.option.optimization.level.389677403" name="Optimization level" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.option.optimization.level" useByScannerDiscovery="false"/>
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.option.definedsymbols.1129352806" name="Define symbols (-D)" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.option.definedsymbols" useByScannerDiscovery="false" valueType="definedSymbols">
+									<listOptionValue builtIn="false" value="STM32H723xx"/>
+									<listOptionValue builtIn="false" value="HSE_VALUE=12000000"/>
+									<listOptionValue builtIn="false" value="__RAM_NO_CACHE=__attributte__((section(&quot;.ram_no_cache&quot;)))"/>
+									<listOptionValue builtIn="false" value="WE_USE_FLOAT"/>
+									<listOptionValue builtIn="false" value="yNO_ETH"/>
+								</option>
+								<option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.option.includepaths.873197839" name="Include paths (-I)" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.option.includepaths" useByScannerDiscovery="false" valueType="includePath">
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/libraries/CMSIS/Device/ST/STM32H7xx/Include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/libraries/CMSIS/Include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../drivers&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../project&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${ProjDirPath}/../../esp32s/main&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/libraries/freertos/configure}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/libraries/freertos/FreeRTOS-Kernel/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/libraries/freertos/FreeRTOS-Kernel/portable/GCC/ARM_CM4F}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/libraries/lwip/configure}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/libraries/lwip/lwip/src/include}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/libraries/lwip/porting}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/libraries/lwip/porting/hal}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/libraries/Si1145/porting}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/libraries/Si1145/Adafruit_SI1145_Library}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/libraries/bh1750fvi/bh1750fvi/src}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/libraries/bh1750fvi/bh1750fvi/interface}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/libraries/bh1750fvi/bh1750fvi/example}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/libraries/wsen_pressure_sensor/porting}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/libraries/wsen_pressure_sensor/Sensors-SDK_STM32}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/libraries/mcp3424/mcp3424-universal-driver}&quot;"/>
+									<listOptionValue builtIn="false" value="&quot;${workspace_loc:/${ProjName}/libraries/ov2640/ov2640/STM32-OV2640-NOHAL/src}&quot;"/>
+								</option>
+								<inputType id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.input.c.221674333" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.input.c"/>
+							</tool>
+							<tool id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.cpp.compiler.590620279" name="MCU G++ Compiler" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.cpp.compiler">
+								<option id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.cpp.compiler.option.debuglevel.734765130" name="Debug level" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.cpp.compiler.option.debuglevel" useByScannerDiscovery="false" value="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.cpp.compiler.option.debuglevel.value.g3" valueType="enumerated"/>
+								<option id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.cpp.compiler.option.optimization.level.384000244" name="Optimization level" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.cpp.compiler.option.optimization.level" useByScannerDiscovery="false"/>
+							</tool>
+							<tool id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.linker.362152157" name="MCU GCC Linker" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.linker">
+								<option id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.linker.option.script.1570102040" name="Linker Script (-T)" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.linker.option.script" useByScannerDiscovery="false" value="${workspace_loc:/${ProjName}/STM32H723ZGTX_FLASH.ld}" valueType="string"/>
+								<inputType id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.linker.input.423365767" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.linker.input">
+									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+								</inputType>
+							</tool>
+							<tool id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.cpp.linker.494540840" name="MCU G++ Linker" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.cpp.linker"/>
+							<tool id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.archiver.1705878972" name="MCU GCC Archiver" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.archiver"/>
+							<tool id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.size.1356811965" name="MCU Size" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.size"/>
+							<tool id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.objdump.listfile.1669589935" name="MCU Output Converter list file" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.objdump.listfile"/>
+							<tool id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.objcopy.hex.34755950" name="MCU Output Converter Hex" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.objcopy.hex"/>
+							<tool id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.objcopy.binary.1746722265" name="MCU Output Converter Binary" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.objcopy.binary"/>
+							<tool id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.objcopy.verilog.516631507" name="MCU Output Converter Verilog" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.objcopy.verilog"/>
+							<tool id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.objcopy.srec.1954233085" name="MCU Output Converter Motorola S-rec" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.objcopy.srec"/>
+							<tool id="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.objcopy.symbolsrec.926458192" name="MCU Output Converter Motorola S-rec with symbols" superClass="com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.objcopy.symbolsrec"/>
+						</toolChain>
+					</folderInfo>
+					<sourceEntries>
+						<entry excluding="libraries/Si1145/Si1145-universal-driver|libraries/Si1145/porting/si1145_port.c|libraries/Si1145/Adafruit_SI1145_Library/examples|libraries/Si1145/Adafruit_SI1145_Library/assets|libraries/ov2640/ov2640/STM32-OV2640-NOHAL/src/main.c|libraries/wsen_pressure_sensor/Sensors-SDK_STM32/examples|libraries/wsen_pressure_sensor/Sensors-SDK_STM32/examples/WSEN_TIDS|libraries/wsen_pressure_sensor/Sensors-SDK_STM32/examples/WSEN_PDUS|libraries/wsen_pressure_sensor/Sensors-SDK_STM32/examples/WSEN_PADS|libraries/wsen_pressure_sensor/Sensors-SDK_STM32/examples/WSEN_MULTI_SENSOR|libraries/wsen_pressure_sensor/Sensors-SDK_STM32/examples/WSEN_ITDS_WAKE_UP|libraries/wsen_pressure_sensor/Sensors-SDK_STM32/examples/WSEN_ITDS_TAP|libraries/wsen_pressure_sensor/Sensors-SDK_STM32/examples/WSEN_ITDS_SPI|libraries/wsen_pressure_sensor/Sensors-SDK_STM32/examples/WSEN_ITDS_SINGLE_DATA_CONVERSION|libraries/wsen_pressure_sensor/Sensors-SDK_STM32/examples/WSEN_ITDS_SELF_TEST|libraries/wsen_pressure_sensor/Sensors-SDK_STM32/examples/WSEN_ITDS_ORIENTATION|libraries/wsen_pressure_sensor/Sensors-SDK_STM32/examples/WSEN_ITDS_FREE_FALL|libraries/wsen_pressure_sensor/Sensors-SDK_STM32/examples/WSEN_ITDS_FIFO|libraries/wsen_pressure_sensor/Sensors-SDK_STM32/examples/WSEN_ITDS_ACTIVITY_INACTIVITY|libraries/wsen_pressure_sensor/Sensors-SDK_STM32/examples/WSEN_ITDS|libraries/wsen_pressure_sensor/Sensors-SDK_STM32/examples/WSEN_ISDS_WAKE_UP|libraries/wsen_pressure_sensor/Sensors-SDK_STM32/examples/WSEN_ISDS_TILT|libraries/wsen_pressure_sensor/Sensors-SDK_STM32/examples/WSEN_ISDS_TAP|libraries/wsen_pressure_sensor/Sensors-SDK_STM32/examples/WSEN_ISDS_SPI|libraries/wsen_pressure_sensor/Sensors-SDK_STM32/examples/WSEN_ISDS_SELF_TEST|libraries/wsen_pressure_sensor/Sensors-SDK_STM32/examples/WSEN_ISDS_ORIENTATION|libraries/wsen_pressure_sensor/Sensors-SDK_STM32/examples/WSEN_ISDS_FREE_FALL|libraries/wsen_pressure_sensor/Sensors-SDK_STM32/examples/WSEN_ISDS_FIFO_ADVANCED|libraries/wsen_pressure_sensor/Sensors-SDK_STM32/examples/WSEN_ISDS_FIFO|libraries/wsen_pressure_sensor/Sensors-SDK_STM32/examples/WSEN_ISDS_ACTIVITY_INACTIVITY|libraries/wsen_pressure_sensor/Sensors-SDK_STM32/examples/WSEN_ISDS|libraries/wsen_pressure_sensor/Sensors-SDK_STM32/examples/WSEN_HIDS_SPI|libraries/wsen_pressure_sensor/Sensors-SDK_STM32/examples/WSEN_HIDS|libraries/wsen_pressure_sensor/Sensors-SDK_STM32/SensorsSDK/WSEN_TIDS_2521020222501|libraries/wsen_pressure_sensor/Sensors-SDK_STM32/SensorsSDK/WSEN_PDUS_25131308XXX01|libraries/wsen_pressure_sensor/Sensors-SDK_STM32/SensorsSDK/WSEN_ITDS_2533020201601|libraries/wsen_pressure_sensor/Sensors-SDK_STM32/SensorsSDK/WSEN_ISDS_2536030320001|libraries/wsen_pressure_sensor/Sensors-SDK_STM32/SensorsSDK/WSEN_HIDS_2523020210001|libraries/wsen_pressure_sensor/Sensors-SDK_STM32/STM32L432xx|libraries/wsen_pressure_sensor/Sensors-SDK_STM32/STM32G031xx|libraries/wsen_pressure_sensor/Sensors-SDK_STM32/platform|libraries/wsen_pressure_sensor/Sensors-SDK_STM32/doc|libraries/wsen_pressure_sensor/Sensors-SDK_STM32/assets|libraries/bh1750fvi/bh1750fvi/interface/driver_bh1750fvi_interface_template.c|libraries/bh1750fvi/bh1750fvi/test|libraries/bh1750fvi/bh1750fvi/project|libraries/bh1750fvi/bh1750fvi/misra|libraries/bh1750fvi/bh1750fvi/doc|libraries/bh1750fvi/bh1750fvi/datasheet|libraries/Si1145/Si1145-universal-driver/test.c|libraries/Si1145/Si1145/test.c|libraries/Si1145/test.c|libraries/tiny-AES-c|libraries/freertos/FreeRTOS-Kernel/portable/GCC/ARM_CA9|libraries/freertos/FreeRTOS-Kernel/portable/BCC|libraries/freertos/FreeRTOS-Kernel/portable/IAR|libraries/freertos/FreeRTOS-Kernel/portable/GCC/MicroBlaze|libraries/freertos/FreeRTOS-Kernel/portable/GCC/MicroBlazeV9|libraries/freertos/FreeRTOS_helpers/port_DRN.c|libraries/freertos/FreeRTOS-Kernel/portable/GCC/RX600|libraries/lwip/lwip/src/apps/lwiperf|libraries/freertos/FreeRTOS-Kernel/portable/GCC/ARM7_LPC2000|libraries/freertos/FreeRTOS-Kernel/portable/CodeWarrior|libraries/lwip/lwip/src/apps/mdns|libraries/freertos/FreeRTOS-Kernel/portable/MSVC-MingW|libraries/freertos/FreeRTOS-Kernel/portable/MikroC|libraries/freertos/FreeRTOS-Kernel/portable/GCC/ARM_CM23|libraries/lwip/lwip/src/apps/mqtt|libraries/freertos/FreeRTOS-Kernel/portable/GCC/RX600v2|libraries/freertos/FreeRTOS-Kernel/portable/GCC/ARM_CRx_No_GIC|libraries/freertos/FreeRTOS-Kernel/portable/GCC/ARM_CM55_NTZ|libraries/freertos/FreeRTOS-Kernel/portable/GCC/PPC440_Xilinx|libraries/freertos/FreeRTOS-Kernel/portable/GCC/MicroBlazeV8|libraries/freertos/FreeRTOS-Kernel/portable/GCC/RL78|libraries/freertos/FreeRTOS-Kernel/portable/GCC/ARM_CM3|libraries/freertos/FreeRTOS-Kernel/portable/Softune|libraries/freertos/FreeRTOS-Kernel/portable/GCC/IA32_flat|libraries/freertos/FreeRTOS-Kernel/portable/GCC/AVR_AVRDx|libraries/freertos/FreeRTOS-Kernel/portable/GCC/H8S2329|libraries/freertos/FreeRTOS-Kernel/portable/GCC/ARM7_AT91SAM7S|libraries/lwip/lwip/src/netif/ppp|libraries/freertos/FreeRTOS-Kernel/portable/GCC/PPC405_Xilinx|libraries/freertos/FreeRTOS-Kernel/portable/GCC/CORTUS_APS3|libraries/freertos/FreeRTOS_helpers/heap_useNewlib_NXP.c|libraries/freertos/FreeRTOS-Kernel/portable/GCC/AVR32_UC3|libraries/lwip/lwip/src/apps/altcp_tls|libraries/CMSIS_RTOS_V2|libraries/freertos/FreeRTOS-Kernel/portable/Paradigm|libraries/freertos/FreeRTOS-Kernel/portable/CCS|libraries/freertos/FreeRTOS-Kernel/portable/WizC|libraries/freertos/FreeRTOS-Kernel/portable/oWatcom|libraries/freertos/FreeRTOS-Kernel/portable/GCC/ARM_CM33_NTZ|libraries/freertos/FreeRTOS-Kernel/portable/MPLAB|libraries/freertos/FreeRTOS-Kernel/portable/GCC/TriCore_1782|libraries/freertos/FreeRTOS-Kernel/portable/GCC/ATMega323|libraries/freertos/FreeRTOS-Kernel/portable/GCC/ARM7_LPC23xx|libraries/freertos/FreeRTOS-Kernel/portable/GCC/RX700v3_DPFPU|libraries/freertos/FreeRTOS-Kernel/portable/Renesas|libraries/freertos/FreeRTOS-Kernel/portable/GCC/ARM_CA53_64_BIT|libraries/freertos/FreeRTOS-Kernel/portable/Tasking|libraries/freertos/FreeRTOS-Kernel/portable/Rowley|libraries/lwip/lwip/doc|libraries/freertos/FreeRTOS-Kernel/portable/GCC/ARM_CA53_64_BIT_SRE|libraries/freertos/FreeRTOS-Kernel/portable/RVDS|libraries/freertos/FreeRTOS-Kernel/portable/GCC/RX200|libraries/freertos/FreeRTOS-Kernel/portable/MemMang|libraries/freertos/FreeRTOS-Kernel/portable/GCC/ARM_CM85_NTZ|libraries/freertos/FreeRTOS-Kernel/portable/GCC/RISC-V|libraries/freertos/FreeRTOS-Kernel/portable/GCC/NiosII|libraries/freertos/FreeRTOS-Kernel/portable/GCC/ARM_CM85|libraries/lwip/lwip/src/apps/http/fsdata.c|libraries/freertos/FreeRTOS-Kernel/portable/ARMv8M|libraries/freertos/FreeRTOS-Kernel/portable/GCC/STR75x|libraries/freertos/FreeRTOS-Kernel/portable/GCC/AVR_Mega0|libraries/lwip/lwip/src/apps/snmp|libraries/lwip/lwip/src/apps/smtp|libraries/freertos/FreeRTOS-Kernel/portable/GCC/ARM_CM7|libraries/freertos/FreeRTOS-Kernel/portable/Common|libraries/lwip/lwip/src/apps/http/makefsdata|libraries/freertos/FreeRTOS-Kernel/portable/GCC/ARM_CM55|libraries/freertos/FreeRTOS-Kernel/portable/GCC/ARM_CM33|libraries/lwip/lwip/src/apps/tftp|libraries/freertos/FreeRTOS-Kernel/portable/GCC/ARM_CM4_MPU|libraries/freertos/FreeRTOS-Kernel/portable/SDCC|libraries/freertos/FreeRTOS-Kernel/portable/GCC/ARM7_AT91FR40008|libraries/lwip/lwip/src/apps/sntp|libraries/lwip/lwip/src/apps/netbiosns|libraries/freertos/FreeRTOS-Kernel/portable/GCC/ARM_CR5|libraries/freertos/FreeRTOS-Kernel/portable/GCC/ARM_CM0|libraries/freertos/FreeRTOS-Kernel/portable/GCC/MCF5235|libraries/lwip/lwip/test|libraries/freertos/FreeRTOS-Kernel/portable/ARMClang|libraries/freertos/FreeRTOS-Kernel/portable/GCC/ColdFire_V2|libraries/freertos/FreeRTOS-Kernel/portable/GCC/RX100|libraries/freertos/FreeRTOS-Kernel/portable/GCC/MSP430F449|libraries/freertos/FreeRTOS-Kernel/portable/GCC/HCS12|libraries/freertos/FreeRTOS-Kernel/portable/Keil|libraries/freertos/FreeRTOS-Kernel/portable/GCC/ARM_CM3_MPU|libraries/freertos/FreeRTOS-Kernel/portable/GCC/ARM_CM23_NTZ|libraries/freertos/FreeRTOS-Kernel/portable/ThirdParty" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+					</sourceEntries>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+	</storageModule>
+	<storageModule moduleId="org.eclipse.cdt.core.pathentry"/>
+	<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+		<project id="edc_main_fw.null.953337005" name="edc_main_fw"/>
+	</storageModule>
+	<storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
+	<storageModule moduleId="scannerConfiguration">
+		<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		<scannerConfigBuildInfo instanceId="com.st.stm32cube.ide.mcu.gnu.managedbuild.config.exe.release.1562416843;com.st.stm32cube.ide.mcu.gnu.managedbuild.config.exe.release.1562416843.;com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.778346988;com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.input.c.2094748940">
+			<autodiscovery enabled="false" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="com.st.stm32cube.ide.mcu.gnu.managedbuild.config.exe.debug.1183035506;com.st.stm32cube.ide.mcu.gnu.managedbuild.config.exe.debug.1183035506.;com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.1556697194;com.st.stm32cube.ide.mcu.gnu.managedbuild.tool.c.compiler.input.c.974990462">
+			<autodiscovery enabled="false" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
+	</storageModule>
+	<storageModule moduleId="org.eclipse.cdt.make.core.buildtargets"/>
+	<storageModule moduleId="refreshScope" versionNumber="2">
+		<configuration configurationName="build"/>
+		<configuration configurationName="build_noeth"/>
+		<configuration configurationName="Debug">
+			<resource resourceType="PROJECT" workspacePath="/edc_main_fw"/>
+		</configuration>
+		<configuration configurationName="Release">
+			<resource resourceType="PROJECT" workspacePath="/edc_main_fw"/>
+		</configuration>
+	</storageModule>
+</cproject>
